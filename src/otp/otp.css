@@ -1,0 +1,31 @@
+input{
+    width:40px;
+    height: 40px;
+    margin:10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+
+input:focus{
+    outline-color: blue;
+}
+.error{
+    border: 1px solid red;
+}
+
+div{
+    text-align: center;
+}
+
+button{
+    font-weight: bold;
+    background-color:purple;
+    color:white;
+    font-size: 15px;
+    cursor: pointer;
+    border:none;
+    margin:4px;
+    height: 40px;
+    width: 80px;
+}

@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import StarRating from './star_rating/StarRating';
+import FileExplorer from './file_folder/FileExplorer';
+import data from './file_folder/data.json'
+import FAQ from './accordion/FAQ';
+import Checkbox from './check_box/Checkbox';
+import Otp from './otp/Otp';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {/* <StarRating starCount={10}/> */}
+      {/* <FileExplorer data={data}/> */}
+      {/* <FAQ/> */}
+      {/* <Checkbox/> */}
+      <Otp len={6}/>
     </div>
   );
 }

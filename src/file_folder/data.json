@@ -1,0 +1,48 @@
+{
+"name": "My Files",
+"type":"folder",
+"children": [
+  {
+    "name": "Documents",
+    "size": 10240, 
+    "type":"folder",
+    "children": [
+      {
+        "name": "report.txt",
+        "size": 512,
+        "type": "file" 
+      },
+      {
+        "name": "images",
+        "size": 20480,
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "Downloads",
+    "size": 40960,
+    "type":"folder",
+    "children": [
+      {
+        "name": "music.mp3",
+        "size": 30720,
+        "type": "file"
+      },
+      {
+        "name": "archive.zip",
+        "size": 10240,
+        "type": "folder",
+        "childer": []
+      }
+    ]
+  },
+  {
+    "name": "Pictures",
+    "size": 81920,
+    "modified": "2024-07-04T10:10:00Z",
+    "type": "folder",
+    "hidden": true 
+  }
+]
+}
