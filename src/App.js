@@ -6,6 +6,7 @@ import data from './file_folder/data.json'
 import FAQ from './accordion/FAQ';
 import Checkbox from './check_box/Checkbox';
 import Otp from './otp/Otp';
+import Modal from './modal/Modal';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       {/* <FileExplorer data={data}/> */}
       {/* <FAQ/> */}
       {/* <Checkbox/> */}
-      <Otp len={6}/>
+      {/* <Otp len={6}/> */}
+      <Modal/>
     </div>
   );
 }
