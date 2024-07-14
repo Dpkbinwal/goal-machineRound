@@ -1,0 +1,58 @@
+[
+    {
+    "name": "Alchemist",
+    "categoery":"thought"
+    },
+    {
+        "name": "5 AM",
+        "categoery":"thought"
+    },
+    {
+        "name": "rich dad poor dad",
+        "categoery":"thought"
+    },
+    {
+        "name": "java",
+        "categoery":"programming"
+    },
+    {
+        "name": "python",
+        "categoery":"programming"
+    },
+    {
+        "name": "css",
+        "categoery":"programming"
+    },
+    {
+        "name": "c",
+        "categoery":"programming"
+    },
+    {
+        "name": "the sun",
+        "categoery":"fiction"
+    },
+    {
+        "name": "karma",
+        "categoery":"fiction"
+    },
+    {
+        "name": "bhavishya malika",
+        "categoery":"fiction"
+    },
+    {
+        "name": "one piece",
+        "categoery":"anime"
+    },
+    {
+        "name": "naruto",
+        "categoery":"anime"
+    }
+    ,{
+        "name": "jjk",
+        "categoery":"anime"
+    },
+    {
+        "name": "solo leaveling",
+        "categoery":"anime"
+    }   
+]
