@@ -11,6 +11,7 @@ import Filter from './filter/Filter';
 import DropDown from './dropDown/DropDown';
 import Tabs from './tabs/Tabs';
 import Swap from './swapListElement/swap';
+import Memory from './2D-memoryCube/Memory';
 
 function App() {
   return (
@@ -25,8 +26,8 @@ function App() {
       {/* <h1>Hello</h1> */}
       {/* <DropDown/> */}
       {/* <Tabs/> */}
-      <Swap/>
-      <swap/>
+      {/* <Swap/> */}
+      <Memory/>
     </div>
   );
 }
