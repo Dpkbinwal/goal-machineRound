@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './dropdown.css'
 
 const countries =[
     {
@@ -21,8 +22,8 @@ const DropDown = () => {
 
     const [city,setCity]= useState(0);
   return (
-    <>
-        <select onChange={(e)=>{
+    <div className="container">
+        <select className="country" onChange={(e)=>{
             console.log(e.target.value);
             setCity(e.target.value);
         }} >
@@ -35,7 +36,7 @@ const DropDown = () => {
             }
         </select>
 
-        <select onChange={(e)=>{
+        <select className="city" onChange={(e)=>{
             console.log(e.target.value);
         }} >
             {
@@ -47,7 +48,7 @@ const DropDown = () => {
             }
         </select>
 
-    </>
+    </div>
   )
 }
 

@@ -9,10 +9,12 @@ import Otp from './otp/Otp';
 import Modal from './modal/Modal';
 import Filter from './filter/Filter';
 import DropDown from './dropDown/DropDown';
+import Tabs from './tabs/Tabs';
+import Swap from './swapListElement/swap';
 
 function App() {
   return (
-    <div className="app">
+    <div className="app" style={{backgroundColor: 'grey'}}>
       {/* <StarRating starCount={10}/> */}
       {/* <FileExplorer data={data}/> */}
       {/* <FAQ/> */}
@@ -21,7 +23,10 @@ function App() {
       {/* <Modal/> */}
       {/* <Filter/> */}
       {/* <h1>Hello</h1> */}
-      <DropDown/>
+      {/* <DropDown/> */}
+      {/* <Tabs/> */}
+      <Swap/>
+      <swap/>
     </div>
   );
 }

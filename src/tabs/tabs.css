@@ -1,0 +1,72 @@
+
+.btn {
+    background-color: #008CBA; /* Blue background */
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px #999; /* Shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transition effect */
+}
+
+.btn:hover {
+    background-color: #007bb5; /* Darker blue on hover */
+    box-shadow: 0 6px #666; /* Larger shadow on hover */
+}
+
+.btn:active {
+    background-color: #006994; /* Even darker blue when clicked */
+    box-shadow: 0 2px #666; /* Smaller shadow when clicked */
+    transform: translateY(4px); /* Move button down when clicked */
+}
+
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 60vw;
+    max-width: 60vw;
+  }
+  
+  .header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+
+
+  .about-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 60vw;
+    max-width: 60vw;
+  }
+  
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 60vw;
+    max-width: 60vw;
+  }
+  
