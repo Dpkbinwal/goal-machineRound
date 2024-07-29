@@ -12,10 +12,18 @@ import DropDown from './dropDown/DropDown';
 import Tabs from './tabs/Tabs';
 import Swap from './swapListElement/swap';
 import Memory from './2D-memoryCube/Memory';
+import ProgressBar from './progress/ProgressBar';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [progressBar, setProgressBar] = useState(0);
+  useEffect(()=>{
+    const interval = setTimeout(() => { 
+      if(progressBar<100) setProgressBar(progressBar+1);
+     },20)
+  })
   return (
-    <div className="app" style={{backgroundColor: 'grey'}}>
+    <div className="app" style={{backgroundColor: 'grey', textAlign:'center'}}>
       {/* <StarRating starCount={10}/> */}
       {/* <FileExplorer data={data}/> */}
       {/* <FAQ/> */}
@@ -27,7 +35,8 @@ function App() {
       {/* <DropDown/> */}
       {/* <Tabs/> */}
       {/* <Swap/> */}
-      <Memory/>
+      {/* <Memory/> */}
+      <ProgressBar progress={progressBar} color='lightgreen'/>
     </div>
   );
 }
