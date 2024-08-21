@@ -14,6 +14,8 @@ import Swap from './swapListElement/swap';
 import Memory from './2D-memoryCube/Memory';
 import ProgressBar from './progress/ProgressBar';
 import { useEffect, useState } from 'react';
+import Calculator from './calculator/Calculator';
+import AddAndRemove from './addAndRemovePlayer';
 
 function App() {
   const [progressBar, setProgressBar] = useState(0);
@@ -36,7 +38,9 @@ function App() {
       {/* <Tabs/> */}
       {/* <Swap/> */}
       {/* <Memory/> */}
-      <ProgressBar progress={progressBar} color='lightgreen'/>
+      {/* <ProgressBar progress={progressBar} color='lightgreen'/> */}
+      {/* <Calculator/> */}
+      <AddAndRemove/>
     </div>
   );
 }
