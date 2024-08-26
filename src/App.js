@@ -16,6 +16,8 @@ import ProgressBar from './progress/ProgressBar';
 import { useEffect, useState } from 'react';
 import Calculator from './calculator/Calculator';
 import AddAndRemove from './addAndRemovePlayer';
+import Quiz from './Quiz/Quiz';
+import Pagination from './pagination/Pagination';
 
 function App() {
   const [progressBar, setProgressBar] = useState(0);
@@ -40,7 +42,10 @@ function App() {
       {/* <Memory/> */}
       {/* <ProgressBar progress={progressBar} color='lightgreen'/> */}
       {/* <Calculator/> */}
-      <AddAndRemove/>
+      {/* <AddAndRemove/> */}
+      {/* <Quiz/> */}
+      <Pagination/>
+
     </div>
   );
 }
