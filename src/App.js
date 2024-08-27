@@ -27,7 +27,7 @@ function App() {
      },20)
   })
   return (
-    <div className="app" style={{backgroundColor: 'grey', textAlign:'center'}}>
+    <div className="app" style={{textAlign:'center'}}>
       {/* <StarRating starCount={10}/> */}
       {/* <FileExplorer data={data}/> */}
       {/* <FAQ/> */}
