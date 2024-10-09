@@ -33,7 +33,24 @@
         "name": "archive.zip",
         "size": 10240,
         "type": "folder",
-        "childer": []
+        "children": [{
+          "name": "archive",
+          "type":"file",
+          "size":122,
+          "children":[{
+            "name": "Pictures",
+            "size": 81920,
+            "modified": "2024-07-04T10:10:00Z",
+            "type": "folder",
+            "hidden": true 
+          },{
+            "name": "PicturesMobile",
+            "size": 81920,
+            "type": "folder",
+            "hidden": true 
+          }]
+
+        }]
       }
     ]
   },
@@ -41,7 +58,7 @@
     "name": "Pictures",
     "size": 81920,
     "modified": "2024-07-04T10:10:00Z",
-    "type": "folder",
+    "type": "file",
     "hidden": true 
   }
 ]
