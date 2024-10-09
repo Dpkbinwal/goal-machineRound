@@ -8,9 +8,9 @@ const FileExplorer = ({data}) => {
   console.log(data);
   return (
     <div style={{marginLeft:"50px"}}>
-      <h1>{data?.type === 'folder'? "folder ":"file "}
+      <h3 style={{display:"flex"}} >{data?.type === 'folder'?"📁":'🗄'}
         <span onClick={()=>setToggle(!toggle)}>{data.name}</span>
-      </h1>
+      </h3>
       
       {
         toggle && data?.children?.map((item, index) => {

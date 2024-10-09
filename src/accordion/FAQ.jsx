@@ -5,7 +5,7 @@ import qna from './qna.json'
 const FAQ = () => {
  
   return (
-    <>
+    <div style={{width:'40%', margin:'auto'}}>
     <h1>FAQ</h1>
 
     {
@@ -15,7 +15,7 @@ const FAQ = () => {
         }
 
    
-    </>
+    </div>
   )
 }
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const Accordion = ({data}) => {
     const [show,setShow]= useState(false);
-    // console.log(show)
+    // console.log(data)
   return (
     <div  style={{border:"2px solid black ", margin:"0.5rem 0",padding:"0.5rem", position:"relative"}}>
         <h3 style={{}}>{data.question}
