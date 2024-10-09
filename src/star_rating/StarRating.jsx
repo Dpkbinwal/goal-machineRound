@@ -8,6 +8,7 @@ const StarRating = ({starCount}) => {
     console.log(value,'value');
   return (
     <div style={{fontSize:'30px', marginTop:'40px'}}>
+      <h3>Star Rating</h3>
     {new Array(starCount).fill(0).map((item,index)=>{
         return <span key={index}
         className={ hoverValue==0 && index<value || index<hoverValue ? 'gold':"goldHover"}

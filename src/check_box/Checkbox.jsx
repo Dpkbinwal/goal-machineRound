@@ -31,7 +31,7 @@ const Checkbox = () => {
     }
     console.log(state);
   return (
-    <div style={{padding:"20px"}}>
+    <div style={{padding:"20px", fontSize:'25px'}}>
 
         <div>
             <input checked={state.check1 && state.check2 && state.check3 && state.check4} onChange={setAll} name="all" type="checkbox"/>
