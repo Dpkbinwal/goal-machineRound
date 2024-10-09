@@ -13,7 +13,7 @@ const Otp = ({ len }) => {
 
   const handleChange = (e,i)=>{
       const value=e.target.value;
-      // console.log(val,i+1);
+      // console.log(e);
       if(!Number(value)){
         return ;
       }
@@ -27,8 +27,9 @@ const Otp = ({ len }) => {
       setVal(copyInput);
       
     }
+
     const handleKeyDown=(e,i)=>{
-      // console.log(e.keyCode);
+      console.log(e.keyCode,'keydown');
       if(e.keyCode === 8){
         const copyInputs=[...val];
         copyInputs[i]=''
@@ -46,7 +47,6 @@ const Otp = ({ len }) => {
             return i;
           }
         }).filter((item)=>(item || item ===0));
-        console.log(missed);
         setMissed(missed);
 
         if(missed.length==0){
@@ -54,14 +54,14 @@ const Otp = ({ len }) => {
         const expectedInput = 222222;
         const isMatch = userInput == expectedInput;
         
-        console.log(isMatch);
+       
         if(isMatch) {alert ("code is valid")}
         else{alert("code is invalid")}
         }
     }
-     console.log("missed :"+ missed);
+   
   return (
-    <div>
+    <div style={{width:'50%',margin:'auto'}}>
       <h1 >Opt Verfication</h1>
       <div style={{ display: 'flex', alignItems: "center", justifyContent: "center" }}>
         {

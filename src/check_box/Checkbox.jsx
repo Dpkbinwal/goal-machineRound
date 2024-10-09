@@ -10,28 +10,24 @@ const Checkbox = () => {
 
 
 
-    const handleClick = ()=>{
-        
-        setState({...state,"check1":!state.check1});
+    const handleClick = (event)=>{
+       const {name,checked}=event.target;
+       console.log(name,checked)
+
+       setState((prev)=>({
+        ...prev,
+        [name]: checked
+       }))
     }
 
-    const handleClick2 = ()=>{
-        
-        setState({...state,"check2":!state.check2});
-    }
-    const handleChange3 = ()=>{
-        
-        setState({...state,"check3":!state.check3});
-    }
-    const handleChange4 = ()=>{
-        setState({...state,"check4":!state.check4});
-    }
+    
     function setAll(){
+        const allChecked = state.check1 && state.check2 && state.check3 && state.check4;
         setState({
-            check1:!state.check1,
-            check2:!state.check2,
-            check3:!state.check3,
-            check4:!state.check4});
+            check1:!allChecked,
+            check2:!allChecked,
+            check3:!allChecked,
+            check4:!allChecked});
     }
     console.log(state);
   return (
@@ -46,15 +42,15 @@ const Checkbox = () => {
             <label for="check1">1</label>
         </div>
         <div>
-            <input checked={state.check2} name="check2" type="checkbox" onChange={handleClick2}/>
+            <input checked={state.check2} id='check2'  name="check2" type="checkbox" onChange={handleClick}/>
             <label for="check2">2</label>
         </div>
         <div>
-            <input checked={state.check3} name="check3" type="checkbox" onChange={handleChange3}/>
+            <input checked={state.check3} id='check3'  name="check3" type="checkbox" onChange={handleClick}/>
             <label for="check3">3</label>
         </div>
         <div>
-            <input checked={state.check4} name="check4" type="checkbox" onChange={handleChange4}/>
+            <input checked={state.check4} id='check4'  name="check4" type="checkbox" onChange={handleClick}/>
             <label for="check4">4</label>
         </div>
     </div>

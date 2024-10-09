@@ -1,4 +1,4 @@
-/* .modal{
+.modal{
      position: fixed;
      
      display: grid;
@@ -12,12 +12,12 @@
     background: radial-gradient(white,rgba(0,0,0,0.5) 50%);
     border: 3px solid purple;
     
-} */
-/* 
+}
+
 .back{
     width: 22px;
     height: 22px;
-    text-align: center;
+    /* text-align: center; */
     border-radius: 0px;
     left: 0;
     color: black;
@@ -41,4 +41,4 @@
 .content{
     
     margin-top:80px;
-} */
+}
