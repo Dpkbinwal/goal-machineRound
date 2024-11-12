@@ -5,7 +5,7 @@ const FileExplorer = ({data}) => {
   
   const [toggle, setToggle] = useState(false);
 
-  console.log(data);
+ 
   return (
     <div style={{marginLeft:"50px"}}>
       <h3 style={{display:"flex"}} >{data?.type === 'folder'?"📁":'🗄'}

@@ -80,7 +80,7 @@ const Otp = ({ len }) => {
           })
         }
       </div>
-      <button onClick={handleSubmit}>Submit</button>
+      <button className='btn' onClick={handleSubmit}>Submit</button>
     </div>
   )
 }

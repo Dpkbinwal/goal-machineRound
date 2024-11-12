@@ -1,4 +1,4 @@
-/* input{
+input{
     width:40px;
     height: 40px;
     margin:10px;
@@ -18,7 +18,7 @@ div{
     text-align: center;
 }
 
-button{
+.btn{
     font-weight: bold;
     background-color:purple;
     color:white;
@@ -29,4 +29,4 @@ button{
     height: 40px;
     width: 100px;
     border-radius: 10px;
-} */
+}

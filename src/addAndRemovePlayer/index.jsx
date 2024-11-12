@@ -39,7 +39,7 @@ function AddAndRemove() {
         <button onClick={handleAddToList1}>Add</button>
       </div>
 
-      {list1.length!=0 && <h2>Total Player</h2>}
+      {list1.length!==0 && <h2>Total Player</h2>}
       <ul>
         {list1.map((item, index) => (
           <li key={index}>
@@ -50,7 +50,7 @@ function AddAndRemove() {
         ))}
       </ul>
 
-      {list2.length!=0 && <h2>Players Who will play</h2>}
+      {list2.length!==0 && <h2>Players Who will play</h2>}
       <ul>
         {list2.map((item, index) => (
           <li key={index}>
