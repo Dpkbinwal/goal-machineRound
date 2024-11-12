@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, useParams, useLocation } from 'react-router-dom';
 import Quiz from './Quiz/Quiz';
 import FileExplorer from './file_folder/FileExplorer';
 import data from './file_folder/data.json';
@@ -9,14 +9,14 @@ import FAQ from './accordion/FAQ';
 import AddAndRemove from './addAndRemovePlayer/index';
 import Checkbox from './check_box/Checkbox';
 import DropDown from './dropDown/DropDown';
-import Filter from './filter/Filter'; // Assuming you want to include this
-import Modal from './modal/Modal'; // Assuming you want to include this
-import Otp from './otp/Otp'; // Assuming you want to include this
-import ProgressBar from './progress/ProgressBar'; // Assuming you want to include this
-import StarRating from './star_rating/StarRating'; // Assuming you want to include this
-import StopWatch from './stopWatch/StopWatch'; // Assuming you want to include this
-import Swap from './swapListElement/swap'; // Assuming you want to include this
-import Tabs from './tabs/Tabs'; // Assuming you want to include this
+import Filter from './filter/Filter'; 
+import Modal from './modal/Modal';
+import Otp from './otp/Otp'; 
+import ProgressBar from './progress/ProgressBar'; 
+import StarRating from './star_rating/StarRating'; 
+import StopWatch from './stopWatch/StopWatch'; 
+import Swap from './swapListElement/swap'; 
+import Tabs from './tabs/Tabs'; 
 
 
 
@@ -77,10 +77,23 @@ const DashboardHome = () => {
   );
 };
 
+const Navbar = ()=>{
+  const location = useLocation();
+
+  if(location.pathname === '/')return;
+
+  return (
+    <div style={{textAlign:'start'}}>
+      <Link to='/'>Back to Dashboard</Link>
+    </div>
+   )
+}
+
 const DashBoardLayout = () => {
   return (
     <Router>
       <div style={{ width: '500px', margin: 'auto' }}>
+        <Navbar/>
         <Routes>
           <Route path="/" element={<DashboardHome />} />
           <Route path="/quiz" element={<Quiz />} />

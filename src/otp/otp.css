@@ -18,7 +18,7 @@ div{
     text-align: center;
 }
 
-button{
+.btn{
     font-weight: bold;
     background-color:purple;
     color:white;
